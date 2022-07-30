@@ -17,6 +17,12 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        textTheme: TextTheme(
+          headline1: TextStyle(color: Colors.deepPurpleAccent),
+          headline2: TextStyle(color: Colors.deepPurpleAccent),
+          bodyText2: TextStyle(color: Colors.deepPurpleAccent),
+          subtitle1: TextStyle(color: Colors.pinkAccent),
+        ),
       ),
       home: const Login_page(),
       routes: {
