@@ -31,6 +31,8 @@ class _StudentDashBordState extends State<StudentDashBord> {
             children: <Widget>[
               postCard(),
               postCard(),
+              postCard(),
+              postCard(),
               Text(student.id),
               Text(student.userName),
               Text(student.password),
