@@ -43,7 +43,7 @@ class _postCardState extends State<postCard> {
                     color: const Color(0xff7c94b6),
                     image: const DecorationImage(
                       image: NetworkImage(
-                          'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg'),
+                          'https://university.webflow.com/lesson/animate-a-custom-banner'),
                       fit: BoxFit.cover,
                     ),
                     border: Border.all(
@@ -65,7 +65,7 @@ class _postCardState extends State<postCard> {
                     maxLines: 1,
                     style: TextStyle(
                       fontSize: 28,
-                      color: Colors.black,
+                      color: Colors.amber,
                       fontWeight: FontWeight.w500,
                     ),
                     textAlign: TextAlign.center,

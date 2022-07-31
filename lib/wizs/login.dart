@@ -31,11 +31,20 @@ class _Login_pageState extends State<Login_page> {
     }
   }
 
+  bool AdminisCheckeded() {
+    return true;
+  }
+
   TextEditingController nameController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
+    //...................
+    bool StudentisChecked = false;
+    bool? _AdminisChecked = false;
+
+    //...................
     return Scaffold(
       appBar: AppBar(title: const Text('IUB ACM Student Chapter')),
       body: Padding(
@@ -52,6 +61,7 @@ class _Login_pageState extends State<Login_page> {
                         fontWeight: FontWeight.w500,
                         fontSize: 30),
                   )),
+
               Container(
                   alignment: Alignment.center,
                   padding: const EdgeInsets.all(10),
@@ -59,6 +69,8 @@ class _Login_pageState extends State<Login_page> {
                     'Sign in',
                     style: TextStyle(fontSize: 20),
                   )),
+              //.................
+
               Container(
                 padding: const EdgeInsets.all(10),
                 child: TextField(

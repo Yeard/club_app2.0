@@ -16,8 +16,6 @@ class Student {
       required this.userName});
 
   static loginCheck(String userName, String password) {
-    //studentDemodata dm = new studentDemodata();
-    //List<Student> demodata = dm.demodataSend();
     List<Student> demodata = studentDemodata().demodataSend();
 
     int found = 0;
