@@ -43,7 +43,7 @@ class _postCardState extends State<postCard> {
                     color: const Color(0xff7c94b6),
                     image: const DecorationImage(
                       image: NetworkImage(
-                          'https://university.webflow.com/lesson/animate-a-custom-banner'),
+                          'https://cdn.pixabay.com/photo/2016/04/06/08/50/gears-1311171__340.jpg'),
                       fit: BoxFit.cover,
                     ),
                     border: Border.all(

@@ -1,5 +1,5 @@
-import 'package:club_app/model/student.dart';
-import 'package:club_app/wizs/student_deshBord.dart';
+import 'package:club_app/model/user.dart';
+import 'package:club_app/wizs/user_deshBord.dart';
 import 'package:flutter/material.dart';
 import '';
 
@@ -11,17 +11,24 @@ class Login_page extends StatefulWidget {
 }
 
 class _Login_pageState extends State<Login_page> {
-  void selectCategory(BuildContext ctx, Student st) {
-    Navigator.of(ctx).pushNamed(
-      '/StudentDashBord',
-      arguments: st,
-    );
+  void selectCategory(BuildContext ctx, User us) {
+    if (us.position == 'user') {
+      Navigator.of(ctx).pushNamed(
+        '/UserDashBord',
+        arguments: us,
+      );
+    } else {
+      Navigator.of(ctx).pushNamed(
+        '/AdminUserDashBord',
+        arguments: us,
+      );
+    }
   }
 
   void home_page(String name, String pass, BuildContext ctx) {
     print('home_page');
 
-    var loginStatus = Student.loginCheck(name, pass);
+    var loginStatus = User.loginCheck(name, pass);
 
     if (loginStatus == 'no') {
       //selectCategory(ctx, name);

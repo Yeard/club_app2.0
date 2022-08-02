@@ -1,5 +1,6 @@
+import 'package:club_app/wizs/adminUser_deshBord.dart';
 import 'package:club_app/wizs/login.dart';
-import 'package:club_app/wizs/student_deshBord.dart';
+import 'package:club_app/wizs/user_deshBord.dart';
 import 'package:flutter/material.dart';
 import './wizs/login.dart';
 
@@ -26,7 +27,8 @@ class MyApp extends StatelessWidget {
       ),
       home: const Login_page(),
       routes: {
-        '/StudentDashBord': (context) => StudentDashBord(),
+        '/UserDashBord': (context) => UserDashBord(),
+        '/AdminUserDashBord': (context) => AdminUserDeshBord(),
       },
     );
   }

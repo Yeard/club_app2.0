@@ -3,7 +3,7 @@ import 'package:flutter/src/widgets/framework.dart';
 
 import 'package:flutter/material.dart';
 
-class MainDrawer extends StatelessWidget {
+class UserMainDrawer extends StatelessWidget {
   void logout(BuildContext ctx) {
     Navigator.of(ctx).pushNamed('/');
   }
@@ -21,7 +21,7 @@ class MainDrawer extends StatelessWidget {
               color: Color.fromARGB(255, 39, 140, 223),
             ),
             child: Text(
-              'Menu Bar',
+              'User Menu Bar',
               style: TextStyle(
                 fontSize: 24,
               ),

@@ -1,22 +1,24 @@
 import 'package:flutter/material.dart';
 import './demo_data_student.dart';
 
-class Student {
+class User {
   final String id;
   final String name;
   final int studentId;
   final String userName;
   final String password;
+  final String position;
 
-  Student(
+  User(
       {required this.id,
       required this.name,
       required this.password,
       required this.studentId,
-      required this.userName});
+      required this.userName,
+      required this.position});
 
   static loginCheck(String userName, String password) {
-    List<Student> demodata = studentDemodata().demodataSend();
+    List<User> demodata = studentDemodata().demodataSend();
 
     int found = 0;
 

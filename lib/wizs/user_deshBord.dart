@@ -1,29 +1,29 @@
-import 'package:club_app/model/student.dart';
+import 'package:club_app/model/user.dart';
 import 'package:club_app/subwizs/post.dart';
-import 'package:club_app/wizs/main_drawer.dart';
+import 'package:club_app/wizs/user_main_drawer.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/material.dart';
 
-class StudentDashBord extends StatefulWidget {
-  const StudentDashBord({Key? key}) : super(key: key);
+class UserDashBord extends StatefulWidget {
+  const UserDashBord({Key? key}) : super(key: key);
 
   @override
-  State<StudentDashBord> createState() => _StudentDashBordState();
+  State<UserDashBord> createState() => _UserDashBordState();
 }
 
-class _StudentDashBordState extends State<StudentDashBord> {
+class _UserDashBordState extends State<UserDashBord> {
 //
 
 //
 
   @override
   Widget build(BuildContext context) {
-    final student = ModalRoute.of(context)?.settings.arguments as Student;
+    final user = ModalRoute.of(context)?.settings.arguments as User;
 
     return Scaffold(
-        appBar: AppBar(title: Text('Student Dash Bord')),
-        drawer: MainDrawer(),
+        appBar: AppBar(title: Text('User Dash Bord')),
+        drawer: UserMainDrawer(),
         body: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -33,12 +33,12 @@ class _StudentDashBordState extends State<StudentDashBord> {
               postCard(),
               postCard(),
               postCard(),
-              Text(student.id),
-              Text(student.userName),
-              Text(student.password),
-              Text(student.userName),
-              Text(student.studentId.toString()),
-              Text(student.name,
+              Text(user.id),
+              Text(user.userName),
+              Text(user.password),
+              Text(user.userName),
+              Text(user.studentId.toString()),
+              Text(user.name,
                   style: DefaultTextStyle.of(context)
                       .style
                       .apply(fontSizeFactor: 2.0)),
