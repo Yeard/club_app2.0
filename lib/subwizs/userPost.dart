@@ -3,14 +3,14 @@ import 'package:flutter/src/widgets/framework.dart';
 
 import 'package:flutter/material.dart';
 
-class postCard extends StatefulWidget {
-  const postCard({Key? key}) : super(key: key);
+class UserPostCard extends StatefulWidget {
+  const UserPostCard({Key? key}) : super(key: key);
 
   @override
-  State<postCard> createState() => _postCardState();
+  State<UserPostCard> createState() => _UserPostCardState();
 }
 
-class _postCardState extends State<postCard> {
+class _UserPostCardState extends State<UserPostCard> {
   bool buttonIsClickedDown = false;
   bool buttonIsClickedUp = false;
   String heading = 'Programing';

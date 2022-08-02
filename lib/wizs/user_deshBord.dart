@@ -1,5 +1,5 @@
 import 'package:club_app/model/user.dart';
-import 'package:club_app/subwizs/post.dart';
+import 'package:club_app/subwizs/userPost.dart';
 import 'package:club_app/wizs/user_main_drawer.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -29,10 +29,10 @@ class _UserDashBordState extends State<UserDashBord> {
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
-              postCard(),
-              postCard(),
-              postCard(),
-              postCard(),
+              UserPostCard(),
+              UserPostCard(),
+              UserPostCard(),
+              UserPostCard(),
               Text(user.id),
               Text(user.userName),
               Text(user.password),

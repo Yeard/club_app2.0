@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
         textTheme: TextTheme(
           headline1: TextStyle(color: Colors.deepPurpleAccent),
           headline2: TextStyle(color: Colors.deepPurpleAccent),
-          bodyText2: TextStyle(color: Colors.deepPurpleAccent),
+          bodyText2: TextStyle(color: Color.fromARGB(255, 43, 14, 122)),
           subtitle1: TextStyle(color: Colors.pinkAccent),
         ),
       ),
