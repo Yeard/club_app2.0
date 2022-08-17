@@ -1,10 +1,18 @@
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
-
 import 'package:flutter/material.dart';
 
 class UserPostCard extends StatefulWidget {
-  const UserPostCard({Key? key}) : super(key: key);
+  final String id;
+  final Uri imguri;
+  final String tittle;
+  final String description;
+  final int interested;
+
+  const UserPostCard(
+      {required this.id,
+      required this.tittle,
+      required this.description,
+      required this.imguri,
+      required this.interested});
 
   @override
   State<UserPostCard> createState() => _UserPostCardState();
@@ -13,11 +21,6 @@ class UserPostCard extends StatefulWidget {
 class _UserPostCardState extends State<UserPostCard> {
   bool buttonIsClickedDown = false;
   bool buttonIsClickedUp = false;
-  String heading = 'Programing';
-  String bodyText =
-      'GeeksforGeeks is a computer science portal for geeks at geeksforgeeks.org. It contains well written  hi hi hi hi ki k i ki ij  ujh uhu h hu It contains well written It contains well written .';
-  Uri imgUral = Uri.parse(
-      'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg');
 
   @override
   Widget build(BuildContext context) {
@@ -41,9 +44,8 @@ class _UserPostCardState extends State<UserPostCard> {
                   width: double.infinity,
                   decoration: BoxDecoration(
                     color: const Color(0xff7c94b6),
-                    image: const DecorationImage(
-                      image: NetworkImage(
-                          'https://cdn.pixabay.com/photo/2016/04/06/08/50/gears-1311171__340.jpg'),
+                    image: DecorationImage(
+                      image: NetworkImage(widget.imguri.toString()),
                       fit: BoxFit.cover,
                     ),
                     border: Border.all(
@@ -61,7 +63,7 @@ class _UserPostCardState extends State<UserPostCard> {
                   height: 32,
                   width: double.infinity,
                   child: Text(
-                    heading,
+                    widget.tittle,
                     maxLines: 1,
                     style: TextStyle(
                       fontSize: 28,
@@ -77,7 +79,7 @@ class _UserPostCardState extends State<UserPostCard> {
                 Container(
                   height: 55,
                   child: Text(
-                    bodyText,
+                    widget.tittle,
                     maxLines: 3,
                     style: TextStyle(
                       fontSize: 15,
