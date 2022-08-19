@@ -5,7 +5,8 @@ import 'package:flutter/material.dart';
 
 class UserMainDrawer extends StatelessWidget {
   void logout(BuildContext ctx) {
-    Navigator.of(ctx).pushNamed('/');
+    //Navigator.of(ctx).pushNamed('/');
+    Navigator.of(ctx).pushReplacementNamed('/');
   }
 
   @override

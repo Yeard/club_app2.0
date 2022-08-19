@@ -8,13 +8,14 @@ class postDemoData {
         description: "I love programing",
         interested: 100,
         imguri: Uri.parse(
-            'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg')),
+            'https://previews.123rf.com/images/ket4up/ket4up1602/ket4up160200038/51635711-best-choice-vector-banner-red-curved-paper-banner-isolated-on-white-background-ribbon.jpg')),
     post(
         id: "2",
         tittle: "Yeard the boss 2",
         interested: 40,
         description: "I love programing",
-        imguri: Uri.parse('https://www.computerhope.com/jargon/j/jpg.png')),
+        imguri: Uri.parse(
+            'https://previews.123rf.com/images/maxborovkov/maxborovkov1809/maxborovkov180900067/110330061-autumn-welcome-sign-with-colorful-maple-leaves-vector-background-.jpg')),
     post(
         id: "3",
         tittle: "Yeard the boss 3",
@@ -26,7 +27,8 @@ class postDemoData {
         tittle: "Yeard the boss 4",
         description: "I love programing",
         interested: 900,
-        imguri: Uri.parse('https://www.computerhope.com/issues/ch001595.htm'))
+        imguri: Uri.parse(
+            'https://previews.123rf.com/images/hamzaali01/hamzaali011705/hamzaali01170500656/78587988-thank-you-letters-vector-word-banner-sign.jpg'))
   ];
 
   List<post> demodataSend() {

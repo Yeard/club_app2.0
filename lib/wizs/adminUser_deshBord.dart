@@ -15,9 +15,6 @@ class AdminUserDeshBord extends StatefulWidget {
 }
 
 class _AdminUserDeshBordState extends State<AdminUserDeshBord> {
-  final List<String> entries = <String>['A', 'B', 'C'];
-  final List<int> colorCodes = <int>[600, 500, 100];
-
   //List<post> postt = postDemoData().demodataSend();
 
   @override
@@ -30,7 +27,7 @@ class _AdminUserDeshBordState extends State<AdminUserDeshBord> {
       drawer: AdminUserMainDrawer(),
       body: ListView.builder(
           padding: const EdgeInsets.all(8),
-          itemCount: entries.length,
+          itemCount: postt.length,
           itemBuilder: (BuildContext context, int index) {
             return AdminPostCard(
               tittle: postt[index].tittle,

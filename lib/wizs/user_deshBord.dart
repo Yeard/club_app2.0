@@ -15,8 +15,7 @@ class UserDashBord extends StatefulWidget {
 
 class _UserDashBordState extends State<UserDashBord> {
 //
-  final List<String> entries = <String>['A', 'B', 'C'];
-  final List<int> colorCodes = <int>[600, 500, 100];
+
 //
 
   @override
@@ -29,7 +28,7 @@ class _UserDashBordState extends State<UserDashBord> {
         drawer: UserMainDrawer(),
         body: ListView.builder(
             padding: const EdgeInsets.all(8),
-            itemCount: entries.length,
+            itemCount: postt.length,
             itemBuilder: (BuildContext context, int index) {
               return UserPostCard(
                 tittle: postt[index].tittle,
